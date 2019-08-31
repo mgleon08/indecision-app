@@ -18,20 +18,29 @@ var template = React.createElement(
   )
 );
 
+var user = {
+  userName: 'Leon Ji',
+  location: 'Taiwan'
+};
+
 var template2 = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    'Name: Leon Ji'
+    'Name: ',
+    user.userName.toUpperCase()
   ),
   React.createElement(
     'p',
     null,
-    ' Location: Taiwan '
+    ' Location: ',
+    user.location,
+    ' '
   )
 );
+
 var appRoot = document.getElementById('app');
 
 ReactDOM.render(template2, appRoot);

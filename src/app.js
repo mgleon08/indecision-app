@@ -1,19 +1,25 @@
 console.log('running');
 // JSX - javascript XML
 
-var template = (
+let template = (
   <div>
     <h1> this is JSX jj</h1>
     <p> info </p>
   </div>
 );
 
-var template2 = (
+let user = {
+  userName: 'Leon Ji',
+  location: 'Taiwan'
+};
+
+let template2 = (
   <div>
-    <h1>Name: Leon Ji</h1>
-    <p> Location: Taiwan </p>
+    <h1>Name: {user.userName.toUpperCase()}</h1>
+    <p> Location: {user.location} </p>
   </div>
 );
-var appRoot = document.getElementById('app');
+
+let appRoot = document.getElementById('app');
 
 ReactDOM.render(template2, appRoot);
