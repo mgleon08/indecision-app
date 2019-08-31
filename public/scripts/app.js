@@ -23,6 +23,17 @@ var user = {
   location: 'Taiwan'
 };
 
+function getAge(age) {
+  if (age) {
+    return React.createElement(
+      'p',
+      null,
+      'Age: ',
+      age
+    );
+  }
+}
+
 var template2 = React.createElement(
   'div',
   null,
@@ -30,8 +41,9 @@ var template2 = React.createElement(
     'h1',
     null,
     'Name: ',
-    user.userName.toUpperCase()
+    user.userName ? user.userName.toUpperCase() : 'Leon Ji'
   ),
+  getAge(user.age),
   React.createElement(
     'p',
     null,
