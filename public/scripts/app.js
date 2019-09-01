@@ -5,7 +5,7 @@ console.log('App.js is running!');
 var app = {
   title: 'Indecision App',
   subtitle: 'Put your life in the hands of a computer',
-  options: []
+  options: ['foo', 'bar']
 };
 
 var onFormSubmit = function onFormSubmit(e) {
@@ -59,16 +59,13 @@ var render = function render() {
     React.createElement(
       'ol',
       null,
-      React.createElement(
-        'li',
-        null,
-        'Item one'
-      ),
-      React.createElement(
-        'li',
-        null,
-        'Item two'
-      )
+      app.options.map(function (option) {
+        return React.createElement(
+          'li',
+          { key: option },
+          option
+        );
+      })
     ),
     React.createElement(
       'form',
