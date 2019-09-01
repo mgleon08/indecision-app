@@ -25,6 +25,11 @@ var onRemoveAll = function onRemoveAll() {
   render();
 };
 
+var onMackDecision = function onMackDecision() {
+  var randomNum = Math.floor(Math.random() * app.options.length);
+  console.log(app.options[randomNum]);
+};
+
 var appRoot = document.getElementById('app');
 
 var render = function render() {
@@ -53,16 +58,21 @@ var render = function render() {
     ),
     React.createElement(
       'button',
+      { disabled: app.options.length === 0, onClick: onMackDecision },
+      'What should I do?'
+    ),
+    React.createElement(
+      'button',
       { onClick: onRemoveAll },
       'Remove All'
     ),
     React.createElement(
       'ol',
       null,
-      app.options.map(function (option) {
+      app.options.map(function (option, index) {
         return React.createElement(
           'li',
-          { key: option },
+          { key: index },
           option
         );
       })

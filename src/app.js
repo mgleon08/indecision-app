@@ -23,6 +23,11 @@ const onRemoveAll = () => {
   render();
 };
 
+const onMackDecision = () => {
+  const randomNum = Math.floor(Math.random() * app.options.length);
+  console.log(app.options[randomNum]);
+};
+
 const appRoot = document.getElementById('app');
 
 const render = () => {
@@ -32,10 +37,13 @@ const render = () => {
       {app.subtitle && <p>{app.subtitle}</p>}
       <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
       <p>{app.options.length}</p>
+      <button disabled={app.options.length === 0} onClick={onMackDecision}>
+        What should I do?
+      </button>
       <button onClick={onRemoveAll}>Remove All</button>
       <ol>
-        {app.options.map(option => (
-          <li key={option}>{option}</li>
+        {app.options.map((option, index) => (
+          <li key={index}>{option}</li>
         ))}
       </ol>
       <form onSubmit={onFormSubmit}>
