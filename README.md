@@ -29,3 +29,6 @@ run
 // --watch 監控，只要一 save 就會自動轉換
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 ```
+
+- [DOM Elements](https://reactjs.org/docs/dom-elements.html)
+- [SyntheticEvent](https://reactjs.org/docs/events.html)
