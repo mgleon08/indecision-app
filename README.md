@@ -32,3 +32,4 @@ babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
+- [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
