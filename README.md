@@ -32,7 +32,7 @@ babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 # Avoid Global Modules
 
-```
+```js
  yarn global remove babel-cli live-server
  npm uninstall -g babel-cli live-server
  yarn add babel-cli live-server
@@ -40,18 +40,32 @@ babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 run
 
-```
+```js
 yarn run server
 yarn run build
 ```
 
 # Webpack
 
+```js
+yarn add webpack webpack-cli
 ```
-yarn add webpack
-yarn add webpack-cli
+
+# Add React not use CDN
+
+```js
+yarn add react react-dom
+```
+
+# Add babel
+
+```js
+// babel-core to use in webpack
+// babel-loader allows transpiling JavaScript files using Babel and webpack.
+yarn add babel-core babel-loader
 ```
 
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+- [webpack](https://webpack.js.org/)
