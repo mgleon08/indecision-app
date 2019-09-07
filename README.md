@@ -30,6 +30,21 @@ run
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 ```
 
+# Avoid Global Modules
+
+```
+ yarn global remove babel-cli live-server
+ npm uninstall -g babel-cli live-server
+ yarn add babel-cli live-server
+```
+
+run
+
+```
+yarn run server
+yarn run build
+```
+
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
