@@ -45,6 +45,13 @@ yarn run server
 yarn run build
 ```
 
+# Webpack
+
+```
+yarn add webpack
+yarn add webpack-cli
+```
+
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
