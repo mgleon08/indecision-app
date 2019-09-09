@@ -65,6 +65,19 @@ yarn add react react-dom
 yarn add babel-core babel-loader
 ```
 
+# Add webpack-dev-server
+
+```js
+yarn add webpack-dev-server
+
+```
+
+# Add class properties
+
+```js
+yarn add babel-plugin-transform-class-properties
+```
+
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
