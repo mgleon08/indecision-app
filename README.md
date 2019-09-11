@@ -84,6 +84,12 @@ yarn add babel-plugin-transform-class-properties
 yarn add style-loader css-loader sass-loader node-sass
 ```
 
+# Add normalize css
+
+```js
+yarn add normalize.css
+```
+
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
