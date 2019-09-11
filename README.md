@@ -78,6 +78,12 @@ yarn add webpack-dev-server
 yarn add babel-plugin-transform-class-properties
 ```
 
+# Add scss loader
+
+```js
+yarn add style-loader css-loader sass-loader node-sass
+```
+
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
