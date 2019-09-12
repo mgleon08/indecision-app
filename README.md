@@ -1,12 +1,5 @@
 # Indecision App
 
-# React CDN
-
-```js
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-```
-
 # Yarn init
 
 ```js
@@ -88,6 +81,12 @@ yarn add style-loader css-loader sass-loader node-sass
 
 ```js
 yarn add normalize.css
+```
+
+# Run
+
+```
+yarn run dev-server
 ```
 
 - [DOM Elements](https://reactjs.org/docs/dom-elements.html)
